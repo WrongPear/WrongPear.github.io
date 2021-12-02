@@ -1,0 +1,102 @@
+body {
+    background-color: grey;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightsalmon;
+    margin: 200px auto;
+    /* top right botton left */
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background-color: lightsalmon;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: salmon;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: darksalmon;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: lightsalmon;
+        transform: rotate(180deg);
+    }
+}
+
+.cube {
+    background: lightblue;
+    animation-name: back-to-round;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes back-to-round {
+    0% {
+        background: lightblue;
+    }
+    25% {
+        background: blue;
+    }
+    50% {
+        background: darkblue;
+    }
+    75% {
+        background: blue;
+    }
+    100% {
+        background: lightblue;
+    }
+}
+
+.antibox {
+    text-align: center;
+    color: lightcyan;
+    animation-name: gonna-hurl;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes gonna-hurl {
+    0% {
+        color: darkcyan;
+    }
+    25% {
+        color: cyan;
+    }
+    50% {
+        color: lightcyan;
+    }
+    75% {
+        color: cyan;
+    }
+    100% {
+        color: darkcyan;
+    }
+}
