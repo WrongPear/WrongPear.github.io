@@ -1,0 +1,88 @@
+/*Color Pallet Source: https://venngage.com/blog/blue-color-palettes/ */
+
+.container {
+    padding: 10px;
+}
+
+.item {
+    background-color: #98c1d9;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #ee6c4d;
+    text-align: center;
+}
+
+.placeholder {
+    background-color: #e0fbfc;
+}
+
+.nav {
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+h1 {
+    text-align: left;
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.5;
+}
+
+p {
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+a {
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: #293241;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navitem {
+    float: left;
+}
+
+.navitem a {
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: parisine-office-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navitem a:hover {
+    background-color: #3d5a80;
+}
