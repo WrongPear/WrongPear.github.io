@@ -15,7 +15,61 @@
     text-align: center;
 }
 
+.footertxt {
+    padding: 5px;
+}
+
 .placeholder {
+    background-color: #e0fbfc;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: #98c1d9;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #e0fbfc;
+}
+
+.middle {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #e0fbfc;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #e0fbfc;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.cool-images {
+    width: 420px;
+    height: 240px;
+}
+
+.bottom-video {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 30px;
+    padding: 10px;
     background-color: #e0fbfc;
 }
 
