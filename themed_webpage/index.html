@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack | Themed Webpage | Christmas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uln1qil.css">
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="h1-transparent">
+            <h1>Santa is Coming to Town!</h1>
+        </div>
+
+        <div class="grid-container">
+            <div class="left">
+                <br>
+            </div>
+            <div class="middle">
+                <div class="timer">
+                    <p id="w3timer"></p>
+                    <script>
+                        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+                        var countDownDate = new Date("Dec 25, 2021 01:00:00").getTime();
+
+                        var x = setInterval(function() {
+
+                            var now = new Date().getTime();
+
+                            var distance = countDownDate - now;
+
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            document.getElementById("w3timer").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("w3timer").innerHTML = "EXPIRED";
+                            }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <div class="right">
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
