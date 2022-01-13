@@ -1,0 +1,15 @@
+.menu-item {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.container {
+    padding: 10px;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: gold;
+}
