@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 0.5vw;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.8vw;
+}
+
+p,
+a {
+    font-size: 1.6vw;
+}
+
+
+/* Responsive elements*/
+
+.picture {
+    background-color: #C10206;
+    color: white;
+    text-align: center;
+    padding: 0.5vw;
+    float: left;
+    width: 40%;
+    margin-bottom: 0.5vw;
+}
+
+.header {
+    background-color: #C10206;
+    color: white;
+    text-align: center;
+    padding: 0.5vw;
+    float: left;
+    width: 60%;
+    margin-bottom: 0.5vw;
+}
+
+.main {
+    float: left;
+    width: 80%;
+    padding: 0 0.5vw;
+}
+
+.main a {
+    color: #C10206;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: #C10206;
+    color: white;
+    padding: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.offerings {
+    float: left;
+    width: 100%;
+    padding: 0 0.5vw;
+}
+
+.offerings a {
+    color: #C10206;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Nav style*/
+
+.navbar {
+    list-style-type: none;
+    background-color: #C10206;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0.5vw;
+    padding: 0.4vw;
+}
+
+.navitem {
+    float: left;
+}
+
+.navitem a {
+    padding: 0.6vw 1vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navitem a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Footer Style */
+
+.footer {
+    background-color: #C10206;
+    color: white;
+    padding: 0.5vw;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6vw;
+    text-align: center;
+}
