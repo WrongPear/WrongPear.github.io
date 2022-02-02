@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JackD | Slideshow Demo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+    </script>
+</head>
+
+<body>
+    <h1>Auto-Playing Slideshow useing jquery Demo</h1>
+    <h3>Today, we are going to make a simple Auto-Playing Slideshow useing jquery to enhance and simplify our slideshow</h3>
+    <hr>
+
+    <h2>Lets start with our HTML</h2>
+    <p>It's important to link your CSS when you are setting up your document but today we are also going to need to link jquery.</p>
+    <p>For todays purpose you don't need to fully understand what jquery does but think of it like another document where you can call on functions instead of haveing everything inline. Today it will enable to add some fancy transitions.</p>
+    <p>Link it like this in your head:</p>
+
+    <pre>
+        <code>
+            link rel="stylesheet" href="css/style.css"
+
+            script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" /script
+        </code>
+    </pre>
+    <hr>
+
+    <h2>HTML: Div Container</h2>
+    <p>Next lets buid a simple container for our slide show. Make sure you use id's to name it. I am going to call mine "slideshow":</p>
+    <pre>
+        <code>
+            div id="slideshow"
+
+            /div
+        </code>
+    </pre>
+    <hr>
+
+    <h2>HTML: Slideshow Elements</h2>
+    <p>Following that you need to add a div within your container for every element of the slideshow. Populate your div elements with whatever content you are useing:</p>
+    <pre>
+        <code>
+            div id="slideshow"
+                div
+                    img src="images/gnome.jpg" alt="gnome1"
+                /div
+                div
+                    img src="images/gnome2.jpeg" alt="gnome2"
+                /div
+                div
+                    I LOVE GNOMES! This is some text to fill the space.
+                /div
+                div
+                    img src="images/gnome3.png" alt="gnome3"
+                /div
+            /div
+        </code>
+    </pre>
+    <p>I chose to add some img's but you can also add text as I also included above. Whatever content you put within these div's will act as a slideshow.</p>
+    <hr>
+
+    <h2>CSS: Size and position</h2>
+    <p>Next within our CSS we need to tell our slideshow container div how big it should be and where it should be.</p>
+    <p>In addition to its dimentions you need give it margins and padding so that you don't overlap with anything (assumeing thats the look you are going for):</p>
+    <pre>
+        <code>
+            #slideshow {
+                margin: 50px auto;
+                position: relative;
+                width: 480px;
+                height: 480px;
+                padding: 10px;
+            }
+        </code>
+    </pre>
+    <p>you can also add some box shaddow to the container here if you want it to look fancy:</p>
+    <pre>
+        <code>
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        </code>
+    </pre>
+    <hr>
+
+    <h2>CSS: Slideshow Elements</h2>
+    <p>Now we need to tell our element div's to stick where they are and have proper spaceing around them.</p>
+    <p>You need to spesify that you are calling on the div's within the slideshow container div:</p>
+    <pre>
+        <code>
+            #slideshow>div {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+        </code>
+    </pre>
+    <hr>
+
+    <h2>CSS: img Formatting</h2>
+    <p>Unless you select your images to be the perfect size you are going to need to tell your img's to stick within its container.</p>
+    <pre>
+        <code>
+            #slideshow>div>img {
+                width: 100%;
+                height: 100%;
+            }
+        </code>
+    </pre>
+    <p>This only calling on the img's within your div's of the div slideshow container.</p>
+    <p>This will fit all your img's to the size of your slideshow so you need to be careful about the img's you selct to display and their aspect ratio.</p>
+    <hr>
+
+    <h2>JS: Slideshow transitions</h2>
+    <p>The last step is to format your slideshow transitions.</p>
+    <p>You can do this in external JS if you link the sheet or you can use the script tag within your HTML.</p>
+    <p>You need to call on the slideshow id and set the Interval to whatever you intent the timeing to be. I am useing 1 second transtions here but you can change that to whatever you like best.</p>
+    <p>Use fade in and out between your transitions between each element:</p>
+    <pre>
+        <code>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+        </code>
+    </pre>
+    <hr>
+
+
+    <h2>Here is our final product!</h2>
+
+    <div id="slideshow">
+        <div>
+            <img src="images/gnome.jpg" alt="gnome1">
+        </div>
+        <div>
+            <img src="images/gnome2.jpeg" alt="gnome2">
+        </div>
+        <div>
+            I LOVE GNOMES! This is some text to fill the space.
+        </div>
+        <div>
+            <img src="images/gnome3.png" alt="gnome3">
+        </div>
+    </div>
+</body>
+
+</html>
