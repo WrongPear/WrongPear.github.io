@@ -10,23 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/script.js">
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&amp;display=swap">
     <link rel="stylesheet" href="https://codepen.io/mtsgeneroso/pen/abvjePp.js">
 </head>
 
 <body>
-    <nav>
-        <!-- want to put and keep this in upper left -->
-        <!-- when working make sure to make it universal (group project demo) -->
-        <ul class="navbar">
-            <li class="navitem"><a href="index.html">Home/Intro</a></li>
-            <li class="navitem"><a href="about.html">About</a></li>
-            <li class="navitem"><a href="contact.html">Contact</a></li>
-            <li class="navitem"><a href="portfolio.html">Portfolio</a></li>
-            <li class="navitem"><a href="pricing.html">Pricing</a></li>
-            <li class="navitem"><a href="TBD.html">TBD</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="menu.html"></div>
 
     <!-- Used: https://www.sliderrevolution.com/resources/css-text-animation/ -rainbow effect -->
     <ul class="c-rainbow">
@@ -38,6 +29,12 @@
         <li class="c-rainbow__layer c-rainbow__layer--green">JACK DENNEY</li>
         <li class="c-rainbow__layer c-rainbow__layer--yellow">JACK DENNEY</li>
     </ul>
+
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
