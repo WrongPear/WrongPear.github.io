@@ -9,6 +9,7 @@
     overflow: hidden;
     margin-top: 0.5vw;
     padding: 0.4vw;
+    float: left;
 }
 
 .navitem {
