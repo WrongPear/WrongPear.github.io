@@ -53,6 +53,9 @@ a {
     color: white;
 }
 
+
+/* hover h1: https://nestingzone.com/design-blog/cool-header-text-ideas */
+
 .bumpdown h1:hover {
     background: url(https://media.giphy.com/media/koyjGfQHIZQKk/giphy.gif);
     background-size: 200%;
