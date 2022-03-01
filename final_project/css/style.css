@@ -44,7 +44,7 @@ a {
 }
 
 .bumpdown {
-    padding-top: 65px;
+    padding-top: 75px;
 }
 
 .bumpdown h1 {
@@ -59,44 +59,29 @@ a {
 .home-desc {
     margin: 0 20%;
     padding: 20px;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 25px;
+    background: #9D84B7;
 }
 
 .showcaseLeft {
     float: left;
     width: 40%;
     padding: 20px;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 50px 20px;
+    margin: 5%;
+    background: #9D84B7;
 }
 
 .showcaseRight {
     float: left;
     width: 40%;
     padding: 20px;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 20px 50px;
-}
-
-.left {
-    float: left;
-    width: 20%;
-}
-
-.main {
-    float: left;
-    width: 60%;
-    padding: 0 1vw;
-}
-
-.right {
-    float: left;
-    width: 20%;
-    background-color: lightseagreen;
-    color: white;
-    padding: 0.5vw;
-    margin-top: 0.5vw;
+    margin: 5%;
+    background: #9D84B7;
 }
 
 
