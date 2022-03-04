@@ -56,15 +56,6 @@ a {
 
 /* Responsive stuff */
 
-.home-desc {
-    margin: 0 20%;
-    padding: 20px;
-    border: 4px solid black;
-    border-radius: 25px;
-    background: #9D84B7;
-    color: white;
-}
-
 .headshot-box {
     position: relative;
 }
@@ -186,6 +177,64 @@ a {
     color: white;
 }
 
+
+/* social links https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
 .contactMap {
     float: left;
     width: 90%;
@@ -197,6 +246,24 @@ a {
     border-radius: 20px;
     background: #9D84B7;
     color: white;
+}
+
+
+/* responsive map https://blog.duda.co/responsive-google-maps-for-your-website */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
