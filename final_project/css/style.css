@@ -26,6 +26,12 @@ h2 {
     font-style: normal;
 }
 
+h3 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 p {
     font-family: quasimoda, sans-serif;
     font-weight: 400;
@@ -383,6 +389,7 @@ a {
     line-height: 65px;
     text-align: center;
     background-color: #6A5495;
+    z-index: 1;
 }
 
 .nav div.logo {
