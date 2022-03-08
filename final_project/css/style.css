@@ -50,6 +50,14 @@ a {
     font-style: normal;
 }
 
+li {
+    text-align: left;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+}
+
 .nav_container {
     margin-left: 5%;
     margin-right: 5%;
@@ -66,7 +74,7 @@ a {
 }
 
 .bumpdownNoHover {
-    padding-top: 75px;
+    padding-top: 85px;
 }
 
 .bumpdownNoHover h1 {
