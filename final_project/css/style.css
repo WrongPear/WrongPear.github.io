@@ -38,6 +38,12 @@ p {
     font-style: normal;
 }
 
+button {
+    font-family: quasimoda, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 a {
     font-family: quasimoda, sans-serif;
     font-weight: 700;
@@ -63,7 +69,7 @@ a {
     padding-top: 75px;
 }
 
-.bumpdown h1 {
+.bumpdownNoHover h1 {
     text-align: center;
     font-size: 12vw;
     color: white;
@@ -163,6 +169,65 @@ a {
     margin-bottom: 0%;
     background: #9D84B7;
     color: white;
+}
+
+.pricingLeft {
+    float: left;
+    width: 26.6%;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 50px 20px;
+    margin: 5%;
+    margin-top: 2.5%;
+    background: #9D84B7;
+    color: white;
+    text-align: center;
+}
+
+.pricingLeft h2 {
+    font-size: 2vw;
+}
+
+.pricingCenter {
+    float: left;
+    width: 26.6%;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 25px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    background: #9D84B7;
+    color: white;
+    text-align: center;
+}
+
+.pricingCenter h2 {
+    font-size: 2vw;
+}
+
+.pricingRight {
+    float: left;
+    width: 26.6%;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 20px 50px;
+    margin: 5%;
+    margin-top: 2.5%;
+    background: #9D84B7;
+    color: white;
+    text-align: center;
+}
+
+.pricingRight h2 {
+    font-size: 2vw;
+}
+
+.priceButton {
+    padding: 10px;
+    font-size: 1vw;
+    background: #FABB51;
+    border: transparent;
+    border-radius: 13px;
 }
 
 .showcaseImg {
