@@ -193,7 +193,7 @@ li {
 }
 
 .pricingLeft h2 {
-    font-size: 2vw;
+    font-size: 35px;
 }
 
 .pricingCenter {
@@ -210,7 +210,7 @@ li {
 }
 
 .pricingCenter h2 {
-    font-size: 2vw;
+    font-size: 35px;
 }
 
 .pricingRight {
@@ -227,7 +227,7 @@ li {
 }
 
 .pricingRight h2 {
-    font-size: 2vw;
+    font-size: 35px;
 }
 
 .priceButton {
