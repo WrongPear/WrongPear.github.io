@@ -237,6 +237,31 @@ li {
     color: white;
 }
 
+.aboutContent {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 50px 20px;
+    margin: 5%;
+    margin-top: 2.5%;
+    background: #9D84B7;
+    color: white;
+}
+
+.aboutImg {
+    float: left;
+    width: 35%;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 20px 50px;
+    margin: 5%;
+    margin-left: 0%;
+    margin-top: 2.5%;
+    background: #FABB51;
+    color: white;
+}
+
 
 /* social links https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 */
 
@@ -338,7 +363,8 @@ li {
 }
 
 
-/* Sldie in txt: https://codepen.io/hillse/pen/VWjEMy*/
+/* 
+Sldie in txt: https://codepen.io/hillse/pen/VWjEMy
 
 .flyinTxtCont {
     height: 100%;
@@ -427,6 +453,7 @@ li {
         transform: translateX(0%);
     }
 }
+*/
 
 
 /* Navbar */
